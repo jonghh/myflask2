@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>input</title>
+    </head>
+    <body>
+     <strong> <h1> 네이버 뉴스 검색과 수집 </h1> </strong>
+     <h4> 검색된 모든 기사에 대해 언론사, 날짜, 제목, 텍스트, URL을 표로 정리해 드립니다</h4>
+     <p> </p>
+     <form action="{{ url_for('navernews_collect.navernews_output') }}" method="post">
+         <p> 검색어 <input type ="text" name="search_word"/> </p>
+         <p> 검색 기간 </p>
+         <p> <input type ="text" name="date_from" placeholder="20200701 방식"> 부터 </p>
+         <p> <input type ="text" name="date_to"> 까지 </p>
+         <p> <input type="submit" value="실행"> </p>
+         <h5> *최대 100건까지 수집되며, 1분 가까이 소요될 수 있습니다. 실행 시간을 줄이기 위해 검색 기간을 짧게 여러 차례 수집해 주세요. </h5>
+         <h5> (문제 발생시에는 이종혁 jonghhhh@khu.ac.kr 으로 알려주세요) </h5>
+     </form>
+    </body>
+</html>

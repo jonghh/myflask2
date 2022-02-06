@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>analysis</title>
+    </head>
+    <body>
+        <h1> 미디어 빅데이터 수집과 분석 </h1>
+        <p> 아래에서 다양한 분석을 이용해 보세요. </p>
+        <p> 자세한 내용은 <strong> 경희대 미디어 학과 이종혁 교수 수업</strong>에서 다뤄집니다. </p>
+        <h5> 문의 사항은 jonghhhh@khu.ac.kr으로 알려주세요. </h5>
+        <ul>
+            <li> <a href="{{ url_for('navernews_collect.navernews_input') }}"> 네이버 뉴스 검색과 수집  </li><br>
+            <li> <a href="{{ url_for('wordcloud.wordcloud_input') }}"> 명사 추출과 워드클라우드(word cloud) 만들기 </li><br>
+            <li> <a href="http://jongh.pythonanywhere.com/newsapi_input"> 세계 뉴스 검색과 수집: News API 활용(https://newsapi.org) </li><br>
+            <li> <a href="http://jongh.pythonanywhere.com/sent_dict_input"> 텍스트 감성분석(사전 기반) </li><br>
+            <li> <a href="http://jongh.pythonanywhere.com/speech_input"> 유튜브 음성 텍스트 추출 </li><br>
+            <li> <a href="http://jongh.pythonanywhere.com/scene_input"> 유튜브 신(scene)과 구성 이미지(key frame) 추출  </li><br>
+            <li> <a href="http://jongh.pythonanywhere.com/headlines_output1"> 실시간 헤드라인 수집: 네이버, 연합, 신문, 방송 </li><br>
+            <li> <a href="http://jongh.pythonanywhere.com/mnaverheadlines_output"> 모바일 네이버 언론사 실시간 주요뉴스 수집 </li><br>
+    </body>
+</html>

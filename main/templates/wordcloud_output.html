@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>output</title>
+    </head>
+    <body>
+        <p> <strong> 분석 글: </strong> </p>
+        <p> {{ target_text }} </p>
+        <p> <strong>추출된 명사(2음절 이상)과 빈도: </strong></p>
+        <p> {{ common_words }} </p>
+        <p> <strong>워드클라우드(word cloud): </strong></p>
+        <p> <img src="{{ url_for('static', filename='wordcloud.jpg') }}" /> </p>
+        <h5> * 형태소 분석에 따라 명사 이외의 단어가 나타날 수 있습니다. 특정 단어를 제외하는 세부 조정이 필요합니다. </h5>
+    </body>
+</html>

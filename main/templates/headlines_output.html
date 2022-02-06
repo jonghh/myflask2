@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>output</title>
+    </head>
+    <body>
+        <p> <b> 실시간 헤드라인 수집(방송): </b> </p>
+        <a href="{{ ulr_for('static', filename='headlines_1.txt') }}" download> 결과 다운로드 </a>
+        <p align="left"> <pre> {{ results1 }} </pre> </p>
+        <p> <b> 실시간 헤드라인 수집(연합,신문):</b> </p>
+        <a href="{{ ulr_for('static', filename='headlines_0.txt') }}" download> 결과 다운로드 </a>
+        <p align="left"> <pre> {{ results }} </pre> </p>
+    </body>
+</html>

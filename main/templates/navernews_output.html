@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>output</title>
+    </head>
+    <body>
+        <p> 검색어: {{ word }} </p>
+        <p> 검색 기간: {{ date_from }}부터 {{ date_to }}까지 </p>
+        <p> 관련도 순으로 최대 100건 정리돼 있습니다. </p>
+        <a href="{{ url_for('static', filename='navernews_result.csv') }}" download> 결과 다운로드 </a>
+        <p> {{ news_all.to_html() | safe }} </p>
+    </body>
+</html>
